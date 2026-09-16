@@ -32,6 +32,10 @@ try:
   a = car_dict.speed
   result = car_["origin"]
   print("result:", result)
-except KeyError as err:
-  print("No")
+except Exception as err:
+  print("General Error:", err)
+else:
+  print("Executed successfully without errors")
+finally:
+print("Final closing logic")
 
